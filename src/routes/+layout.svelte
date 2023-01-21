@@ -1,8 +1,6 @@
 <script lang="ts">
     import "../app.postcss";
 
-    import { page } from "$app/stores";
-
     import { clusterApiUrl } from "@solana/web3.js";
 
     import { walletStore } from "@svelte-on-solana/wallet-adapter-core";
@@ -46,7 +44,6 @@
         }
     };
 
-    $: console.log($walletStore);
 </script>
 
 <nav class="flex justify-center items-center">
